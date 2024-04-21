@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TryRootMe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Cer Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Try<br>Root Me</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Descargas</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sobre nosotros</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Equipo</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pistas</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Try Root Me</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>TryRootMe</b></h1>
+  </div>
+
+  <div class="w3-container" id="downloads" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Descargas</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Selecciona un archivo para descargar:</p>
+    <ul class="w3-ul w3-light-grey w3-center">
+      <!-- Enlace de descarga para el archivo Dragon Ball -->
+      <li class="w3-padding-16">
+        <a href="dragonball.vbox" download>Dragon Ball (Easy)</a>
+      </li>
+      <!-- Enlace de descarga para el archivo Elden Ring -->
+      <li class="w3-padding-16">
+        <a href="eldenring.vbox" download>Elden Ring (Medium)</a>
+      </li>
+    </ul>
+  </div>
+  
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Sobre nosotros.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are just another brick in the wall!</p>
+    <p>Try Root Me es una plataforma en ciberseguridad gamificada, que ofrece capacitación y evaluación de talento, permitiendo a individuos, empresas, instituciones gubernamentales y universidades mejorar sus habilidades en seguridad ofensiva y defensiva.
+
+      Es la solución ideal para profesionales y organizaciones de ciberseguridad que desean mejorar continuamente su preparación ante ataques cibernéticos, fortaleciendo sus capacidades de red team. Cada máquina ofrecerá diferentes desafíos para aplicar técnicas de Pentesting, que consiste en simular ataques cibernéticos en sistemas, redes o aplicaciones para identificar vulnerabilidades.
+      
+      Cada una de nuestra maquinaria tiene un conjunto de vulnerabilidades específicas, las más comúnmente encontradas en la vida real.
+      
+      Equivocate y falla por el camino! Y sobre todo ¡diviértete!
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Equipo</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Sergio y Sam somos dos jóvenes recién graduados del curso de ASIX/Ciberseguridad, con ganas por contribuir a la comunidad de Pentesters. 
+      A menudo practicamos con maquinas vulnerables para poner a prueba nuestros conocimientos en hacking ético, pero recientemente nos aventuramos a crear las nuestras, 
+      ya que creemos que para aprender a destruir, también debemos aprender a construir.
+    </p>
+    <p><b>Si, estos personajes somos nosotros</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="sergio.jpg.jpeg" alt="John" style="width:200px">
+        <div class="w3-container">
+          <h3>Sergio</h3>
+          <p class="w3-opacity">CEO</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="samcara.png" alt="Jane" style="width:285px">
+        <div class="w3-container">
+          <h3>Sam</h3>
+          <p class="w3-opacity">CTO</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Pistas</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Como sabemos que puede resultar un dolor de cabeza, te daremos algunas pistas</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Dragon Ball</li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-padding-large w3-hover-black" onclick="toggleContent('basicFloorplanning')">Pista 1</button>
+          <div class="content" id="basicFloorplanning">
+            <p style="display:none;">Prueba inspeccionar</p>
+          </div>
+        </li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-padding-large w3-hover-black" onclick="toggleContent('basicSupport')">Pista 2</button>
+          <div class="content" id="basicSupport">
+            <p style="display:none;">Image.jpg contiene información</p>
+          </div>
+        </li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-padding-large w3-hover-black" onclick="toggleContent('basicPhotography')">Pista 3</button>
+          <div class="content" id="basicPhotography">
+            <p style="display:none;">Formulario.php contiene un gran secreto</p>
+          </div>
+        </li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-padding-large w3-hover-black" onclick="toggleContent('basicDiscount')">Pista 4</button>
+          <div class="content" id="basicDiscount">
+            <p style="display:none;">Mysql te dará el poder</p>
+          </div>
+        </li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-padding-large w3-hover-black" onclick="toggleContent('basicDeals')">Pista 5</button>
+          <div class="content" id="basicDeals">
+            <p style="display:none;">zenosama tiene privilegios root</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Elden Ring</li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-padding-large w3-hover-black" onclick="toggleContent('proFloorplanning')">Pista 1</button>
+          <div class="content" id="proFloorplanning">
+            <p style="display:none;">Texto de Floorplanning</p>
+          </div>
+        </li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-padding-large w3-hover-black" onclick="toggleContent('proSupport')">Pista 2</button>
+          <div class="content" id="proSupport">
+            <p style="display:none;">Texto de 50 hours support</p>
+          </div>
+        </li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-padding-large w3-hover-black" onclick="toggleContent('proPhotography')">Pista 3</button>
+          <div class="content" id="proPhotography">
+            <p style="display:none;">Texto de Photography</p>
+          </div>
+        </li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-padding-large w3-hover-black" onclick="toggleContent('proDiscount')">Pista 4</button>
+          <div class="content" id="proDiscount">
+            <p style="display:none;">Texto de 50% furniture discount</p>
+          </div>
+        </li>
+        <li class="w3-padding-16">
+          <button class="w3-button w3-padding-large w3-hover-black" onclick="toggleContent('proDeals')">Pista 5</button>
+          <div class="content" id="proDeals">
+            <p style="display:none;">Texto de GREAT deals</p>
+          </div>
+      </ul>
+    </div>
+  </div>
+
+<script>
+  function toggleContent(id) {
+    var content = document.getElementById(id).querySelector("p");
+    if (content.style.display === "none") {
+      content.style.display = "block";
+    } else {
+      content.style.display = "none";
+    }
+  }
+</script>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contacto</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Si tienes alguna duda o sugerencia, no dudes en contactarnos!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nombre</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Mensaje</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Enviar Mensaje</button>
+    </form>  
+  </div>
+  <div class="w3-container" id="downloads" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Retos Incibe</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Los retos descargables de la Academia Hacker de INCIBE tienen la finalidad de formar en materia de ciberseguridad de manera práctica, amena y lúdica.</p>
+
+    <p>Consisten en una serie de retos técnicos, clasificados por categoría de reto y nivel de dificultad, que puedes descargar y tratar de resolver. Los retos tienen como objetivo fomentar el aprendizaje de las últimas técnicas de ciberseguridad, mediante una serie de desafíos técnicos que van aumentado su grado de dificultad.</p>
+    
+    <ul class="w3-ul w3-light-grey w3-center">
+        <!-- Enlace de descarga para el archivo Dragon Ball -->
+        <li class="w3-padding-16">
+            <a href="Reto2-césar" download>Reto Cifrado Cesar</a>
+        </li>
+        <!-- Enlace de descarga para el archivo Elden Ring -->
+        <li class="w3-padding-16">
+            <a href="Reto3-python" download>Reto Python</a>
+        </li>
+
+        <li class="w3-padding-16">
+          <a href="Reto4-enigma" download>Reto Enigma</a>
+        </li>
+
+      <li class="w3-padding-16">
+        <a href="Reto5-wiresharsk-dns" download>Reto Wireshark</a>
+      </li>
+
+    <li class="w3-padding-16">
+      <a href="Reto6-wireshark-ftp" download>Reto Wireshark 2</a>
+    </li>
+
+  <li class="w3-padding-16">
+    <a href="Reto7" download>Ultimo Reto</a>
+  </li>
+ 
+  <li class="w3-padding-16">
+    <a href="Notas_Soluciones_Estudiar.docx" download>Soluciones</a>
+  </li>
+  
+      </ul>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Somos <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">TryRootMe</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
